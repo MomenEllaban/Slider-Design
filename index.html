@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Slider Design</title>
+    <style></style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <h1>Customer Reviews</h1>
+      <div class="reviews_box">
+        <div id="slide">
+          <!-- 1 card -->
+          <div class="card">
+            <div class="profile">
+              <img src="img/pic1.jpg" alt="" />
+              <div>
+                <h3>Riley Olie</h3>
+                <p>Web Designer</p>
+              </div>
+            </div>
+            <p>
+              Many people feel that there is a limited amount of abundance,
+              wealth, or chance to succeed in life. Furthermore, there is a
+              solid beleif that if one person succeeds, another must fail. Many
+              people feel that there is a limited amount of abundance.
+            </p>
+          </div>
+
+          <!-- 2 card -->
+          <div class="card">
+            <div class="profile">
+              <img src="img/pic2.jpg" alt="" />
+              <div>
+                <h3>Riley Olie</h3>
+                <p>Web Designer</p>
+              </div>
+            </div>
+            <p>
+              Many people feel that there is a limited amount of abundance,
+              wealth, or chance to succeed in life. Furthermore, there is a
+              solid beleif that if one person succeeds, another must fail. Many
+              people feel that there is a limited amount of abundance.
+            </p>
+          </div>
+
+          <!-- 3 card -->
+          <div class="card">
+            <div class="profile">
+              <img src="img/pic3.jpg" alt="" />
+              <div>
+                <h3>Riley Olie</h3>
+                <p>Web Designer</p>
+              </div>
+            </div>
+            <p>
+              Many people feel that there is a limited amount of abundance,
+              wealth, or chance to succeed in life. Furthermore, there is a
+              solid beleif that if one person succeeds, another must fail. Many
+              people feel that there is a limited amount of abundance.
+            </p>
+          </div>
+
+
+            <!-- 4 card -->
+            <div class="card">
+              <div class="profile">
+                <img src="img/pic4.jpg" alt="" />
+                <div>
+                  <h3>Riley Olie</h3>
+                  <p>Web Designer</p>
+                </div>
+              </div>
+              <p>
+                Many people feel that there is a limited amount of abundance,
+                wealth, or chance to succeed in life. Furthermore, there is a
+                solid beleif that if one person succeeds, another must fail. Many
+                people feel that there is a limited amount of abundance.
+              </p>
+            </div>
+
+
+
+        </div>
+
+        <div class="sidebar">
+          <img src="img/up-arrow.png" alt="" id="upArrow" />
+          <img src="img/down-arrow.png" alt="" id="downArrow" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var slide = document.getElementById("slide");
+      var upArrow = document.getElementById("upArrow");
+      var downArrow = document.getElementById("downArrow");
+
+      let x = 0;
+
+      upArrow.onclick = function () {
+        if (x > "-900") {
+          x = x - 300;
+          slide.style.top = x + "px";
+        }
+      };
+      downArrow.onclick = function () {
+        if (x < 0) {
+          x = x + 300;
+          slide.style.top = x + "px";
+        }
+      };
+    </script>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
